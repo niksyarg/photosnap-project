@@ -9,7 +9,6 @@ body {
     overflow-x: hidden;
 }
 
-/* --- NAVBAR --- */
 .navbar {
     height: 72px;
     display: flex;
