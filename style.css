@@ -100,7 +100,7 @@ p { opacity: 0.6; margin-bottom: 30px; line-height: 1.6; }
 .arrow-btn i { margin-left: 15px; transition: 0.3s; }
 .arrow-btn:hover i { transform: translateX(10px); }
 
-/* --- STORIES GRID --- */
+
 .stories-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
