@@ -1,4 +1,4 @@
-/* --- BASE SETUP --- */
+
 * {
     margin: 0; padding: 0; box-sizing: border-box;
 }
@@ -52,7 +52,7 @@ body {
 
 .btn-invite:hover { background: #dfdfdf; color: #000; }
 
-/* --- INFO ROWS (HERO & BLOCKS) --- */
+
 .info-row {
     display: flex;
     height: 600px;
@@ -146,7 +146,7 @@ p { opacity: 0.6; margin-bottom: 30px; line-height: 1.6; }
     display: flex; justify-content: space-between; align-items: center;
 }
 
-/* --- FEATURES --- */
+
 .features {
     display: flex;
     padding: 160px 10%;
