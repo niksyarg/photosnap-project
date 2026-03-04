@@ -1,0 +1,192 @@
+/* --- BASE SETUP --- */
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+/* --- NAVBAR --- */
+.navbar {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 18px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 15px;
+}
+
+.btn-invite {
+    background: #000;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-invite:hover { background: #dfdfdf; color: #000; }
+
+/* --- INFO ROWS (HERO & BLOCKS) --- */
+.info-row {
+    display: flex;
+    height: 600px;
+    width: 100%;
+}
+
+.info-row.reversed { flex-direction: row-reverse; }
+
+.info-content {
+    width: 40%;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.info-image {
+    width: 60%;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-black { background-color: #000; color: #fff; }
+.bg-white { background-color: #fff; color: #000; }
+
+.rainbow-border {
+    position: absolute;
+    left: 0; top: 150px;
+    width: 6px; height: 300px;
+    background: linear-gradient(#FFC593, #BC7198, #5A77FF);
+}
+
+h1 { font-size: 40px; letter-spacing: 4px; line-height: 1.2; margin-bottom: 20px; }
+p { opacity: 0.6; margin-bottom: 30px; line-height: 1.6; }
+
+.arrow-btn {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.arrow-btn.black { color: #000; }
+.arrow-btn i { margin-left: 15px; transition: 0.3s; }
+.arrow-btn:hover i { transform: translateX(10px); }
+
+/* --- STORIES GRID --- */
+.stories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.story-card {
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    color: #fff;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.story-card:hover { transform: translateY(-24px); }
+
+.story-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; width: 100%; height: 6px;
+    background: linear-gradient(to right, #FFC593, #BC7198, #5A77FF);
+    opacity: 0;
+}
+
+.story-card:hover::before { opacity: 1; }
+
+.story-overlay {
+    padding: 40px;
+    width: 100%;
+    z-index: 2;
+    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+}
+
+.story-overlay hr { border: none; height: 1px; background: rgba(255,255,255,0.2); margin: 15px 0; }
+
+.read-btn {
+    text-decoration: none; color: #fff;
+    font-size: 12px; font-weight: 700; letter-spacing: 2px;
+    display: flex; justify-content: space-between; align-items: center;
+}
+
+/* --- FEATURES --- */
+.features {
+    display: flex;
+    padding: 160px 10%;
+    text-align: center;
+    gap: 30px;
+}
+
+.feature-item { flex: 1; }
+.feature-item i { font-size: 40px; margin-bottom: 30px; }
+.feature-item h4 { margin-bottom: 20px; }
+
+/* --- FOOTER --- */
+.main-footer {
+    background: #000;
+    color: #fff;
+    padding: 60px 10%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-brand, .footer-links, .footer-cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo.white { color: #fff; font-weight: 700; letter-spacing: 3px; font-size: 20px; }
+
+.social-icons { display: flex; gap: 15px; margin-top: 40px; }
+.social-icons a { color: #fff; font-size: 20px; transition: 0.3s; }
+.social-icons a:hover { color: #BC7198; }
+
+.footer-links a {
+    color: #fff; text-decoration: none;
+    font-size: 12px; font-weight: 700; letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.footer-cta { align-items: flex-end; }
+.copy { opacity: 0.5; font-size: 14px; margin-top: 40px; }
